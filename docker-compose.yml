@@ -1,0 +1,6 @@
+version: '2.4'
+services:
+  my_app:
+    image: "akatkova/ui-angular:latest"
+    ports:
+      - "8080:80"
