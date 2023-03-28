@@ -81,7 +81,7 @@ jobs:
       #     labels: ${{ steps.meta.outputs.labels }}
       - name: Publish to Registry
         # pre: echo ::save-state name=RELEASE_VERSION::$(echo ${GITHUB_REF:10})
-        uses: elgohr/Publish-Docker-Github-Action@v4
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: ${{ env.IMAGE_NAME }}
           username: ${{ secrets.DOCKER_USER }}
